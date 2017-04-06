@@ -1,4 +1,4 @@
-#_______________________________________________________________________________________________________________________________________________________________
+#_________________________________________________________________________________________
 #source_groups(src/ PROJECT_SOURCE_FILES)
 macro(source_groups current_dir)
     file(GLOB children RELATIVE ${PROJECT_SOURCE_DIR}/${current_dir}
@@ -16,7 +16,7 @@ macro(source_groups current_dir)
         endif()
     endforeach()
 endmacro()
-#_______________________________________________________________________________________________________________________________________________________________
+#_________________________________________________________________________________________
 #add_recursive(src/ PROJECT_SOURCE_FILES)
 macro(add_recursive current_dir)
     file(GLOB_RECURSE PROJECT_SOURCE_FILES ${current_dir}/*.h ${current_dir}/*.cpp) 
@@ -38,7 +38,7 @@ macro(add_recursive current_dir)
 
     source_group("" FILES ${current_dir}/main.cpp PARENT_SCOPE)
 endmacro()
-#_______________________________________________________________________________________________________________________________________________________________
+#_________________________________________________________________________________________
 cmake_minimum_required(VERSION 2.7)
 get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${SolutionName})

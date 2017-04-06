@@ -1,7 +1,14 @@
-sudo apt-get install git
-sudo apt-get install cmake
+function download(){
+	sudo apt-get -y install $1
+	echo $1 installed
+}
+
+download git
+download cmake
+download make
 
 mkdir -p _build
-cd obj
+cd _build
 cmake ..
 make -j4
+pause
