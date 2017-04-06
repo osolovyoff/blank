@@ -44,11 +44,11 @@ get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${SolutionName})
 
 
-set(BOOST_ROOT "c:/api/boost/")
-option(Boost_USE_STATIC_LIBS    "Set to ON to force the use of the static libraries."                                                  ON)
-option(Boost_USE_MULTITHREADED  "Set to OFF to use the non-multithreaded libraries                                         ('mt' tag)" ON)  
-option(Boost_USE_STATIC_RUNTIME "Set to ON or OFF to specify whether to use libraries linked statically to the C++ runtime ('s' tag) " ON)
-option(Boost_USE_DEBUG_RUNTIME  "Set to ON or OFF to specify whether to use libraries linked to the MS debug C++ runtime   ('g' tag) " ON)
+#set(BOOST_ROOT "c:/api/boost/")
+#option(Boost_USE_STATIC_LIBS    "Set to ON to force the use of the static libraries."                                                  ON)
+#option(Boost_USE_MULTITHREADED  "Set to OFF to use the non-multithreaded libraries                                         ('mt' tag)" ON)  
+#option(Boost_USE_STATIC_RUNTIME "Set to ON or OFF to specify whether to use libraries linked statically to the C++ runtime ('s' tag) " ON)
+#option(Boost_USE_DEBUG_RUNTIME  "Set to ON or OFF to specify whether to use libraries linked to the MS debug C++ runtime   ('g' tag) " ON)
 
 add_recursive(src/)
 #file(GLOB PROJECT_SOURCE_FILES "src/*.h" "src/*.cpp")
@@ -60,8 +60,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT /O2 /Ob2")
 add_definitions(-D _CRT_SECURE_NO_WARNINGS)
 add_definitions(-D _WIN32_WINNT=0x0501)
 
-find_package(Boost COMPONENTS regex system chrono date_time filesystem program_options serialization REQUIRED)
-include_directories(${Boost_INCLUDE_DIR})
+#find_package(Boost COMPONENTS regex system chrono date_time filesystem program_options serialization REQUIRED)
+#include_directories(${Boost_INCLUDE_DIR})
 include_directories("src/")
     
 add_executable(Project ${PROJECT_SOURCE_FILES})
