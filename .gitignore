@@ -1,6 +1,5 @@
 #Files
-bin/
-_build/
-
 
 #Folders
+_bin/
+_build/
