@@ -22,4 +22,11 @@ get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${SolutionName})
 
 add_recursive(source PARSED_SOURCE)
+include_directories(source)
 add_executable(${PROJECT_NAME} ${PARSED_SOURCE})
+
+# XXX
+# set(XXX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/3thparty/XXX")
+# add_subdirectory(${XXX_PATH})
+# include_directories(${PROJECT_NAME} "${XXX_PATH}/include")
+# target_link_libraries(${PROJECT_NAME}  XXX_STATIC)  
