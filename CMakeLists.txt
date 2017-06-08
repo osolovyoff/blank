@@ -18,6 +18,8 @@ function(add_recursive current_dir sources_files)
 endfunction(add_recursive)
 #_________________________________________________________________________________________
 cmake_minimum_required(VERSION 3.8)
+get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
+project(${SolutionName})
 
 add_recursive(source PARSED_SOURCE)
 add_executable(${PROJECT_NAME} ${PARSED_SOURCE})
