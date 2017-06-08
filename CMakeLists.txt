@@ -17,7 +17,7 @@ function(add_recursive current_dir sources_files)
     set(${sources_files} ${${sources_files}} PARENT_SCOPE)
 endfunction(add_recursive)
 #_________________________________________________________________________________________
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${SolutionName})
 
