@@ -1,8 +1,12 @@
 ## Support
 TODO
 
-## How to build
-
+## How to use
+1. Clone project
+1. Install project dependencies by configuration/download_prerequisites.py
+1. Rename root folder (from Blank to %YourProjectName%)
+1. Add %YourSource% to 'source' directory of project
+1. Build project by configuration/build.py
 
 ## Dependencies
 - [x] [CMake](https://cmake.org)
