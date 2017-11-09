@@ -1,2 +1,6 @@
-#Folders
+# Folders
 build/
+
+# Files
+conanfile.txt
+conanbuildinfo.cmake

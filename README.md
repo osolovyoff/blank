@@ -20,7 +20,7 @@ This stuff provides comfortable engine use
 TODO
 
 ## License
-[ Copyright © 2015 Oleg Solovyov] (https://github.com/vbloodv/blank/blob/master/LICENSE)
+[ Copyright © 2015 Oleg Solovyov](https://github.com/vbloodv/blank/blob/master/LICENSE)
 
 ## Problems
 Please report any problems by [opening an issue](https://github.com/vbloodv/blank/issues/new).
