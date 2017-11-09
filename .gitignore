@@ -1,5 +1,6 @@
 # Folders
 build/
+configuration/__pycache__
 
 # Files
 conanfile.txt
