@@ -1,11 +1,9 @@
-import os
-from subprocess import call
+from utils import Executor
+from utils import Guide
 
-build_directory = "build"
+guide = Guide("..","build")
+guide.make_build()
+guide.cd_build()
 
-os.chdir("../")
-if not os.path.exists(build_directory):
-	os.mkdir(build_directory)
-os.chdir(build_directory)
-
-call('cmake ../', shell=True)
+Executor.run(["conan", "install", guide.root_dir])
+Executor.run(["cmake", guide.root_dir])
