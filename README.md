@@ -1,7 +1,6 @@
-## Support
 ![Marketing](https://images.askmen.com/1080x540/2016/05/20-120731-what_makes_a_woman_sexy.jpg)
-![NotMyLogo](https://www.underconsideration.com/brandnew/archives/blank_digital_logo_detail.png)
 
+**Blank** is an open software project for fast research and development using by [Boost](http://www.boost.org), [Poco](https://pocoproject.org) and other libraries of [community C++](http://www.cplusplus.com). Small size of **blank** allows storage this project on your PC or FLASH. Project can be using everytime when you want have something test or build fast.
 
 ## Dependencies
 
