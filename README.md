@@ -1,24 +1,23 @@
 ## Support
-TODO
-![Marketing](https://media.indiatimes.in/media/content/itimes/photo/2014/Aug/6/1407329051-hd-wallpaper-hot-girl-hdwall.jpg)
+![Marketing](https://images.askmen.com/1080x540/2016/05/20-120731-what_makes_a_woman_sexy.jpg)
+![NotMyLogo](https://www.underconsideration.com/brandnew/archives/blank_digital_logo_detail.png)
 
-## How to use
-1. Clone project
-1. Install project dependencies by configuration/download_prerequisites.py
-1. Rename root folder (from Blank to %YourProjectName%)
-1. Add %YourSource% to 'source' directory of project
-1. Build project by configuration/build.py
 
 ## Dependencies
+
+TODO 
+
+## Requirements
 - [x] [CMake](https://cmake.org)
 - [x] [Conan](https://conan.io/)
 - [x] [Python3](https://www.python.org/)
-- [x] [Strawberry Perl](http://strawberryperl.com/)
-<br>
-This stuff provides comfortable engine use
 
-## Requirements
-TODO
+## Quick start
+1. Clone project
+1. If you want you can rename root project folder from blank to $YourName
+1. Add sources files to ```source``` directory of project
+1. Build project by configuration/build.py
+1. PROFIT !!!
 
 ## License
 [ Copyright © 2015 Oleg Solovyov](https://github.com/vbloodv/blank/blob/master/LICENSE)
