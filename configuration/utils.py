@@ -1,6 +1,7 @@
 import os
 import platform
 import subprocess
+import configparser
 
 class Executor:
     def run(commands = [], *args):
@@ -36,3 +37,22 @@ class Guide:
 
     def cd_build(self):
         os.chdir(self.build_dir)
+
+class Config:
+    __name = "cfg.ini"
+
+    def __init__(self):
+        if not os.path.isfile(self.__name):
+            file = open(self.__name, 'w')
+            file.write("[IDE]\n")
+            file.write("Windows = Visual Studio 15 2017 Win64\n")
+            file.write("Darwin = Xcode\n")
+            file.write("Linux = KDevelop3")
+
+            file.close()
+
+    def get_ide(self):
+        config = configparser.ConfigParser()
+        config.read(self.__name)
+        operation_system = platform.system()
+        return config['IDE'][operation_system]
