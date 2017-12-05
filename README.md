@@ -14,6 +14,7 @@ TODO
 ## Quick start
 1. Clone project
 1. If you want you can rename root project folder from blank to $YourName
+1. Run configuration/download_prerequisites.py script
 1. Add sources files to ```source``` directory of project
 1. Build project by configuration/build.py
 1. PROFIT !!!
