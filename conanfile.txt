@@ -1,6 +1,12 @@
 [requires]
-# Boost/1.64.0@conan/stable
+Boost/1.64.0@conan/stable
 # Poco/1.8.0.1@pocoproject/stable
+# OpenSSL/1.0.2m@conan/stable
+
+[options]
+Poco:shared=False
+Boost:shared=False
+OpenSSL:shared=False
 
 [generators]
 cmake
