@@ -7,9 +7,13 @@
 TODO 
 
 ## Requirements
-- [x] [CMake](https://cmake.org)
-- [x] [Conan](https://conan.io/)
-- [x] [Python3](https://www.python.org/)
+- [x] ![](https://cmake.org/wp-content/uploads/2014/06/favicon.png =16x16) [CMake](https://cmake.org)
+- [x] ![](https://conan.io/images/logo/jfrog_conan.png =16x16) [Conan](https://conan.io/)
+- [x] ![](https://www.python.org/static/favicon.ico =16x16) [Python3](https://www.python.org/)
+
+## Platform dependencies
+- [x] ![](https://chocolatey.org/favicon.ico =16x16) [choco](https://chocolatey.org/)
+- [x] ![](https://brew.sh/img/favicon.ico =16x16) [brew](https://brew.sh/)
 
 ## Quick start
 1. Clone project
