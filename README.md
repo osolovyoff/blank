@@ -1,6 +1,5 @@
-<center>![Verch](https://tw-webserver1.teamworkpm.net/sites/verch/images/4FAEEB4AB5BE8E6C288E0D3EACB1D0E7.png)
+![Verch](https://tw-webserver1.teamworkpm.net/sites/verch/images/4FAEEB4AB5BE8E6C288E0D3EACB1D0E7.png)
 (c) Supported by Verch
-</center>
 
 ### Quick start
 * Clone from [github](https://github.com/vbloodv/blank.git)
