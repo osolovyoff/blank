@@ -25,10 +25,17 @@ cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 get_filename_component(SolutionName ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${SolutionName})
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo_multi.cmake)
 include_directories(source)
 conan_basic_setup()
 
 add_recursive(source PARSED_SOURCE)
 add_executable(${PROJECT_NAME} ${PARSED_SOURCE})
-target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
+
+foreach(debug_lib ${CONAN_LIBS_DEBUG})
+    target_link_libraries(${PROJECT_NAME} debug ${debug_lib})
+endforeach()
+
+foreach(release_lib ${CONAN_LIBS_RELEASE})
+    target_link_libraries(${PROJECT_NAME} optimized ${release_lib})
+endforeach()
