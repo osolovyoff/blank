@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 get_filename_component(solution_name ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${solution_name})
 
-if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
+if(NOT EXISTS "${CMAKE_BINARY_DIR}/cmake/conan.cmake")
     message(STATUS "Downloading conan.cmake from https://github.com/memsharded/cmake-conan")
-    file(DOWNLOAD "https://github.com/conan-io/cmake-conan/raw/master/conan.cmake" "${CMAKE_BINARY_DIR}/conan.cmake")
+    file(DOWNLOAD "https://github.com/conan-io/cmake-conan/raw/master/conan.cmake" "${CMAKE_BINARY_DIR}/cmake/conan.cmake")
 endif()
 
-include(conan.cmake)
-include(CMake/parse.cmake)
-include(CMake/repositories.cmake)
+include(cmake/conan.cmake)
+include(cmake/parse.cmake)
+include(cmake/repositories.cmake)
 
 initialize_conan_repositories()
 
