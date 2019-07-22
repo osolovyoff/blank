@@ -3,10 +3,9 @@
 
 ### Quick start
 * Clone from [github](https://github.com/vbloodv/blank.git)
-* Change folder name to __YourProject__
-	* For first time start ```configuration/download_prerequisites.py```
+* Change folder name to __YourProjectName__
 * Add sources to ```source/```
-* Build project by ```configuration/build.py```
+* Build project by ```cmake ..``` from project folder. For example __build__ or __project__
 
 |_Requirements:_|_Platform dependencies:_|
 |---|---|
