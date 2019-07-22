@@ -1,5 +1,6 @@
 # Folders
 build/
+project/
 configuration/__pycache__
 
 # Files
