@@ -8,7 +8,7 @@
 * Uncomment requirements from [conanfile.txt](conanfile.txt) what is your need
 * Build project by ```cmake ..``` from project folder
 
-> Easy way: ```mkdir project_dir && cd build && cmake ..```
+> Easy way: ```mkdir project_dir && cd project_dir && cmake ..```
 
 |_Requirements:_|_Platform dependencies:_|
 |---|---|
