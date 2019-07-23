@@ -1,7 +1,7 @@
 [requires]
-boost/1.70.0@conan/stable
-Poco/1.9.0@pocoproject/stable
-OpenSSL/1.0.2m@conan/stable
+# boost/1.70.0@conan/stable
+# Poco/1.9.0@pocoproject/stable
+# OpenSSL/1.0.2m@conan/stable
 
 [generators]
 cmake
