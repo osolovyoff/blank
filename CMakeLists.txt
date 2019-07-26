@@ -26,6 +26,10 @@ include_directories(source)
 add_recursive(source PARSED_SOURCE)
 add_executable(${PROJECT_NAME} ${PARSED_SOURCE})
 
+foreach(header_directory ${CONAN_INCLUDE_DIRS})
+    include(${header_directory})
+endforeach()
+
 foreach(debug_lib ${CONAN_LIBS_DEBUG})
     target_link_libraries(${PROJECT_NAME} debug ${debug_lib})
 endforeach()
