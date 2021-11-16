@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.9 FATAL_ERROR)
 get_filename_component(solution_name ${CMAKE_CURRENT_LIST_DIR} NAME)
 project(${solution_name})
 
